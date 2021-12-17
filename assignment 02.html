@@ -40,30 +40,24 @@
             color: red;
         }
 
-        main > section > section {
-            margin-left: 200px;
-            position: absolute;
-        }
-
-        body > main > section > section > div > img {
-            width: 300px;
-            height: 250px;
-            position: absolute;
-        }
 
         main > nav > ul {
             list-style: none;
             color: white;
         }
-        main > nav > ul > li{
-            padding-bottom: 10px;
+
+        main > nav > ul > li {
+            padding-bottom: 20px;
             font-size: 20px;
         }
-        main > nav > ul > li > a{
+
+        main > nav > ul > li > a {
             text-decoration: none;
             color: white;
+            margin-left: 10px;
         }
-        main > nav > ul > li > a:hover{
+
+        main > nav > ul > li > a:hover {
             color: orange;
         }
 
@@ -80,22 +74,51 @@
             margin: auto;
         }
 
+        main > section > section {
+            position: relative;
+            margin-left: 200px;
+            height: 250px;
+        }
+
+        main > section > section > div {
+            position: absolute;
+            height: 250px;
+            width: calc(100% / 3);
+        }
+
+        main > section > section > div:nth-child(1) {
+            left: 0;
+            background-image: url("assets/images/img (1).jpg");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(2) {
+            left: calc(100% / 3);
+            background-image: url("assets/images/img (2).jpg");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(3) {
+            left: calc((100% / 3) * 2);
+            background-image: url("assets/images/img (3).png");
+            background-size: cover;
+        }
+
+
         main > section > p {
             margin-left: 200px;
             padding: 10px;
         }
 
         footer {
-            position: sticky;
             background: grey;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
+            height: 30px;
         }
 
-        footer > p {
+        body > footer > p {
+            text-align: center;
             color: white;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -114,17 +137,17 @@
 <main>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+            <li><i class="fas fa-globe-americas"></i><a href="#">Service</a></li>
+            <li><i class="fas fa-address-book"></i><a href="#">Contacts</a></li>
+            <li><i class="fas fa-info-circle"></i><a href="#">About Us</a></li>
         </ul>
     </nav>
     <section>
         <section>
-            <div><img src="assets/images/img%20(1).jpg" alt=""></div>
-            <div><img src="assets/images/img%20(2).jpg" alt=""></div>
-            <div><img src="assets/images/img%20(3).png" alt=""></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci cumque debitis dignissimos dolorem
             dolores esse et in magni minus molestiae necessitatibus recusandae, sapiente tempora ullam! Cumque

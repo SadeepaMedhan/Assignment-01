@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    main>section{
+      position: relative;
+      border: 2px solid red;
+      height: 300px;
+    }
+    main > section > div {
+      position: absolute;
+      border: 2px solid red;
+      height: 100%;
+      width: calc(100% / 4);
+    }
+
+    main > section >div:nth-child(1) {
+      left: 0;
+    }
+
+    main > section >  div:nth-child(2) {
+      left: calc(100% / 4);
+    }
+
+    main > section > div:nth-child(3) {
+      left: calc((100% / 4) * 2);
+    }
+    main > section > div:nth-child(4) {
+      left: calc((100% / 4) * 3);
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</main>
+
+</body>
+</html>
