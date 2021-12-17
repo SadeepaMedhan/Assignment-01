@@ -47,7 +47,7 @@
             position: absolute;
         }
 
-        main>nav>section>ul{
+        main>nav>ul{
             color: white;
         }
 
@@ -55,16 +55,14 @@
             position: relative;
         }
 
-        main>section{
-            position: absolute;
-        }
-        main>nav>section{
+
+        main>nav{
             background: purple;
-            position:fixed;
+            position:absolute;
             width: 200px;
-            margin-top: 80px;
             top: 0;
             bottom: 0;
+            margin: auto;
         }
 
         main>section>p{
@@ -72,7 +70,7 @@
         }
 
         footer{
-            position: absolute;
+            position: sticky;
             background: grey;
             bottom: 0;
             left: 0;
@@ -101,14 +99,12 @@
 
 <main>
     <nav>
-        <section>
             <ul>
                 <li>Home</li>
                 <li>Service</li>
                 <li>Contacts</li>
                 <li>About Us</li>
             </ul>
-        </section>
     </nav>
     <section>
         <section>
