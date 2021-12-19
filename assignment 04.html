@@ -6,34 +6,70 @@
     <link href="assets/css/normalize.css" rel="stylesheet">
     <style>
 
-        body{
-            position: relative;
+        body {
         }
+
         body > section {
             position: relative;
             height: 100vh;
             border: 2px solid black;
         }
 
-        div{
-            height: 25px;
+        body > section > div {
+            height: 30px;
+            top: 0;
             background: #917a7a;
             position: sticky;
         }
-        div>p{
+
+        div > p {
+            color: white;
+            font-weight: bold;
             font-size: 20px;
         }
 
-        body>section>h1{
+        body > section > h1 {
             position: absolute;
             font-size: 60px;
             font-weight: bold;
-            font-family: Arial,monospace;
+            font-family: Arial, monospace;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
             margin: auto;
+        }
+
+        body > section:nth-child(1) {
+
+        }
+
+        body > section:nth-child(2) {
+            background: #31699e;
+        }
+
+        body > section:nth-child(3) {
+            background: #4a3a3a;
+        }
+
+        body > section:nth-child(4) {
+            background: #c23022;
+        }
+
+        body > section:nth-child(1) > div {
+            background: #d52424;
+        }
+
+        body > section:nth-child(2) > div {
+            background: #0909b6;
+        }
+
+        body > section:nth-child(3) > div {
+            background: black;
+        }
+
+        body > section:nth-child(4) > div {
+            background: #8e1e1e;
         }
     </style>
 </head>
@@ -42,25 +78,25 @@
     <div>
         <p>Card 1</p>
     </div>
-        <h1>Hello</h1>
+    <h1>Hello</h1>
 </section>
 <section>
     <div>
         <p>Card 2</p>
     </div>
-        <h1>How</h1>
+    <h1>How</h1>
 </section>
 <section>
     <div>
         <p>Card 3</p>
     </div>
-        <h1>Are</h1>
+    <h1>Are</h1>
 </section>
 <section>
     <div>
         <p>Card 4</p>
     </div>
-        <h1>You..?</h1>
+    <h1>You..?</h1>
 </section>
 
 </body>
